@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>SleekCMS — Build Without Limits</title>
+    <meta name="description" content="SleekCMS is the modern headless CMS for developers and content teams. Define pages in JSON, render with React. No rebuild needed to rearrange content." />
+    <meta name="keywords" content="CMS, headless CMS, React CMS, content management, SleekCMS" />
+    <meta name="author" content="SleekCMS Team" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SleekCMS — Build Without Limits" />
+    <meta property="og:description" content="The modern headless CMS for React developers." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Prevent FOUC (Flash of Unstyled Content) for dark mode -->
+    <script>
+      (function() {
+        var theme = localStorage.getItem('sleek-theme') || 'dark';
+        if (theme === 'light') {
+          document.documentElement.classList.add('light');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
